@@ -1,26 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ebac Tech talks</title>
-    <link rel="stylesheet" href="styles/main.scss">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ebac Tech Talks</title>
 
-</head>
-<body>
+    <link rel="stylesheet" href="styles/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
     <header class="hero">
-        <div class="container">
-            <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
-            <P class="hero__text">
-                O meu aniversrio será em 20d 10h 20m 15s
-            </P>
+      <div class="container">
+        <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC" />
+        <p class="hero__text">
+          O meu aniversário será em <span id="contador"></span>
+        </p>
+        <div class="infos-bar">
+          <ul class="infos-bar__infos">
+            <li class="infos-bar__infos__item">
+              <b>Localização</b> Bnh Velho - Ouro Fino - Minas Gerais
+            </li>
+            <li class="infos-bar__infos__item">
+              <b>Preço</b> A partir de 120
+            </li>
+            <li class="infos-bar__infos__item">
+              <b>Quando</b> 14/04/1996 às 19:00
+            </li>
+          </ul>
+          <a href="#" class="button button--primary">Garanta seu lugar</a>
         </div>
-
+      </div>
     </header>
-    <script src="scripts/main.js"></script>
-    
-</body>
+
+    <section class="event event--frontend">
+  <div class="container" data-aos="fade-right">
+    <div class="event__details">
+      <h2 class="event__details__title">Show ao Vivo</h2>
+      <p class="event__details__description">
+        Uma apresentação imperdível com músicas animadas, energia contagiante e participação especial de convidados.
+      </p>
+    </div>
+    <img class="event__image" src="./images/churras.jpeg" alt="Show ao vivo" />
+  </div>
+</section>
+
+<section class="event event--ui-ux event--image-left">
+  <div class="container" data-aos="fade-left">
+    <div class="event__details">
+      <h2 class="event__details__title">Churrasco</h2>
+      <p class="event__details__description">
+        Prepare-se para saborear carnes deliciosas, acompanhamentos variados e aquele clima descontraído entre amigos.
+      </p>
+    </div>
+    <img class="event__image" src="./images/churras.jpeg" alt="Churrasco" />
+  </div>
+</section>
+
+<section class="event event--data-science">
+  <div class="container" data-aos="fade-right">
+    <div class="event__details">
+      <h2 class="event__details__title">Bebidas Diversas</h2>
+      <p class="event__details__description">
+        Um bar completo com coquetéis, refrigerantes, sucos e opções refrescantes para todos os gostos.
+      </p>
+    </div>
+    <img class="event__image" src="./images/bebidas.jpeg" alt="Bebidas diversas" />
+  </div>
+</section>
+
+<section class="event event--backend event--image-left">
+  <div class="container" data-aos="fade-left">
+    <div class="event__details">
+      <h2 class="event__details__title">Esportes</h2>
+      <p class="event__details__description">
+        Diversas atividades esportivas e competições amistosas para se divertir e desafiar os amigos.
+      </p>
+    </div>
+    <img class="event__image" src="./images/fut7.jpeg" alt="Esportes" />
+  </div>
+</section>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script src="scripts/main.js"></script>
+
+  </body>
 </html>
